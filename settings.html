@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NOVA — Settings</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+
+  <div class="brand">
+    <div class="logo">◆</div>
+    <span>NOVA Dashboard</span>
+  </div>
+
+  <nav class="nav">
+    <a href="/dashboard">▦ &nbsp; Overview</a>
+    <a href="/sales">◉ &nbsp; Sales</a>
+    <a href="/customers">◌ &nbsp; Customers</a>
+    <a href="/orders">▤ &nbsp; Orders</a>
+    <a href="/reports">◫ &nbsp; Reports</a>
+    <a class="active" href="/settings">⚙ &nbsp; Settings</a>
+  </nav>
+
+</aside>
+
+<main class="main">
+
+<header class="top">
+
+  <div class="title">
+    <h1>Settings</h1>
+    <p>Manage your account and dashboard preferences.</p>
+  </div>
+
+</header>
+
+<section class="card settings-card">
+
+  <h3>Account Settings</h3>
+
+  <form method="POST" action="/settings">
+
+    <div class="form-grid">
+
+      <div>
+        <label>First Name</label>
+        <input type="text" name="first_name" value="John">
+      </div>
+
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="last_name" value="Doe">
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" value="john@example.com">
+      </div>
+
+      <div>
+        <label>Phone</label>
+        <input type="tel" name="phone" value="+1 555 123 4567">
+      </div>
+
+    </div>
+
+    <hr>
+
+    <h3>Notifications</h3>
+
+    <label class="setting-row">
+      <span>
+        <b>Email notifications</b>
+        <small>Receive important account updates.</small>
+      </span>
+      <input type="checkbox" name="email_notifications" checked>
+    </label>
+
+    <label class="setting-row">
+      <span>
+        <b>Order notifications</b>
+        <small>Get notified when a new order arrives.</small>
+      </span>
+      <input type="checkbox" name="order_notifications" checked>
+    </label>
+
+    <div class="actions settings-actions">
+      <button type="submit" class="btn primary">
+        Save Changes
+      </button>
+    </div>
+
+  </form>
+
+</section>
+
+</main>
+</div>
+
+</body>
+</html>

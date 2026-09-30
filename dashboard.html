@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NOVA — Dashboard</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <div class="logo">◆</div>
+      <span>NOVA Dashboard</span>
+    </div>
+
+    <nav class="nav">
+      <a class="active" href="/dashboard">▦ &nbsp; Overview</a>
+      <a href="/sales">◉ &nbsp; Sales</a>
+      <a href="/customers">◌ &nbsp; Customers</a>
+      <a href="/orders">▤ &nbsp; Orders</a>
+      <a href="/reports">◫ &nbsp; Reports</a>
+      <a href="/settings">⚙ &nbsp; Settings</a>
+    </nav>
+
+  </aside>
+
+  <main class="main">
+
+    <header class="top">
+
+      <div class="title">
+        <h1>Overview</h1>
+        <p>Welcome back. Here is your business performance at a glance.</p>
+      </div>
+
+      <div class="actions">
+        <button class="btn">⬇ Export</button>
+        <a class="btn primary" href="/orders">＋ Add Order</a>
+      </div>
+
+    </header>
+
+    <section class="grid">
+
+      <div class="card stat">
+        <div class="icon">💰</div>
+        <div class="num">$124,500</div>
+        <div class="label">Monthly Revenue</div>
+        <div class="trend">▲ 12.8% vs last month</div>
+      </div>
+
+      <div class="card stat">
+        <div class="icon">🛒</div>
+        <div class="num">1,842</div>
+        <div class="label">Total Orders</div>
+        <div class="trend">▲ 8.4% vs last month</div>
+      </div>
+
+      <div class="card stat">
+        <div class="icon">👥</div>
+        <div class="num">8,621</div>
+        <div class="label">Active Customers</div>
+        <div class="trend">▲ 5.2% vs last month</div>
+      </div>
+
+      <div class="card stat">
+        <div class="icon">↗</div>
+        <div class="num">3.8%</div>
+        <div class="label">Conversion Rate</div>
+        <div class="trend down">▼ 0.6% vs last month</div>
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="card">
+        <h3>Revenue Trend</h3>
+
+        <div class="chart">
+          <i class="bar" style="height:42%"><span>Jan</span></i>
+          <i class="bar" style="height:58%"><span>Feb</span></i>
+          <i class="bar" style="height:49%"><span>Mar</span></i>
+          <i class="bar" style="height:70%"><span>Apr</span></i>
+          <i class="bar" style="height:63%"><span>May</span></i>
+          <i class="bar" style="height:82%"><span>Jun</span></i>
+          <i class="bar" style="height:91%"><span>Jul</span></i>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <h3>Recent Activity</h3>
+
+        <div class="activity">
+
+          <div class="item">
+            <div class="avatar">MA</div>
+            <div>
+              <b>Maria Adams</b> placed an order
+              <small>5 minutes ago</small>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="avatar">JR</div>
+            <div>
+              <b>James Reed</b> completed a payment
+              <small>23 minutes ago</small>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="avatar">SC</div>
+            <div>
+              <b>Sarah Carter</b> created an account
+              <small>1 hour ago</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="card table-card">
+
+      <h3>Latest Orders</h3>
+
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th>Order</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>#10482</td>
+            <td>Maria Adams</td>
+            <td>Pro Subscription</td>
+            <td>$2,450</td>
+            <td><span class="status">Completed</span></td>
+          </tr>
+
+          <tr>
+            <td>#10481</td>
+            <td>James Reed</td>
+            <td>Enterprise Package</td>
+            <td>$7,800</td>
+            <td><span class="status">Completed</span></td>
+          </tr>
+
+          <tr>
+            <td>#10480</td>
+            <td>Sarah Carter</td>
+            <td>Basic Subscription</td>
+            <td>$990</td>
+            <td><span class="status wait">Pending</span></td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

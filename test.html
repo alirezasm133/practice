@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NOVA — Login</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+
+<body class="login-page">
+
+<div class="login-card">
+  <div class="brand login-brand">
+    <div class="logo">◆</div>
+    <span>NOVA</span>
+  </div>
+
+  <h1>Welcome back</h1>
+  <p class="muted">Sign in to your dashboard</p>
+
+  <form method="POST" action="/login">
+
+    <label>Email</label>
+    <input
+      type="email"
+      name="email"
+      placeholder="you@example.com"
+      required
+    >
+
+    <label>Password</label>
+    <input
+      type="password"
+      name="password"
+      placeholder="••••••••"
+      required
+    >
+
+    <div class="form-row">
+      <label class="checkbox">
+        <input type="checkbox" name="remember">
+        Remember me
+      </label>
+
+      <a href="#">Forgot password?</a>
+    </div>
+
+    <button class="btn primary full" type="submit">
+      Sign in
+    </button>
+
+  </form>
+
+  <p class="login-footer">
+    Don't have an account?
+    <a href="#">Create account</a>
+  </p>
+</div>
+
+</body>
+</html>

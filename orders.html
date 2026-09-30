@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NOVA — Orders</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+
+  <div class="brand">
+    <div class="logo">◆</div>
+    <span>NOVA Dashboard</span>
+  </div>
+
+  <nav class="nav">
+    <a href="/dashboard">▦ &nbsp; Overview</a>
+    <a href="/sales">◉ &nbsp; Sales</a>
+    <a href="/customers">◌ &nbsp; Customers</a>
+    <a class="active" href="/orders">▤ &nbsp; Orders</a>
+    <a href="/reports">◫ &nbsp; Reports</a>
+    <a href="/settings">⚙ &nbsp; Settings</a>
+  </nav>
+
+</aside>
+
+<main class="main">
+
+<header class="top">
+
+  <div class="title">
+    <h1>Orders</h1>
+    <p>View and manage all customer orders.</p>
+  </div>
+
+  <div class="actions">
+    <button class="btn">⬇ Export</button>
+    <button class="btn primary">＋ New Order</button>
+  </div>
+
+</header>
+
+<section class="card table-card">
+
+  <div class="table-header">
+
+    <h3>All Orders</h3>
+
+    <div class="filters">
+      <input class="search" placeholder="Search order...">
+
+      <select class="select">
+        <option>All Statuses</option>
+        <option>Completed</option>
+        <option>Pending</option>
+        <option>Cancelled</option>
+      </select>
+    </div>
+
+  </div>
+
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>Order</th>
+        <th>Customer</th>
+        <th>Product</th>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td><b>#10482</b></td>
+        <td>Maria Adams</td>
+        <td>Pro Subscription</td>
+        <td>Sep 30, 2026</td>
+        <td>$2,450</td>
+        <td><span class="status">Completed</span></td>
+      </tr>
+
+      <tr>
+        <td><b>#10481</b></td>
+        <td>James Reed</td>
+        <td>Enterprise Package</td>
+        <td>Sep 30, 2026</td>
+        <td>$7,800</td>
+        <td><span class="status">Completed</span></td>
+      </tr>
+
+      <tr>
+        <td><b>#10480</b></td>
+        <td>Sarah Carter</td>
+        <td>Basic Subscription</td>
+        <td>Sep 29, 2026</td>
+        <td>$990</td>
+        <td><span class="status wait">Pending</span></td>
+      </tr>
+
+      <tr>
+        <td><b>#10479</b></td>
+        <td>Noah Miller</td>
+        <td>Pro Subscription</td>
+        <td>Sep 29, 2026</td>
+        <td>$2,450</td>
+        <td><span class="status">Completed</span></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+</main>
+</div>
+
+</body>
+</html>

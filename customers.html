@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NOVA — Customers</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+
+  <div class="brand">
+    <div class="logo">◆</div>
+    <span>NOVA Dashboard</span>
+  </div>
+
+  <nav class="nav">
+    <a href="/dashboard">▦ &nbsp; Overview</a>
+    <a href="/sales">◉ &nbsp; Sales</a>
+    <a class="active" href="/customers">◌ &nbsp; Customers</a>
+    <a href="/orders">▤ &nbsp; Orders</a>
+    <a href="/reports">◫ &nbsp; Reports</a>
+    <a href="/settings">⚙ &nbsp; Settings</a>
+  </nav>
+
+</aside>
+
+<main class="main">
+
+<header class="top">
+
+  <div class="title">
+    <h1>Customers</h1>
+    <p>Manage and monitor your customers.</p>
+  </div>
+
+  <div class="actions">
+    <button class="btn primary">＋ Add Customer</button>
+  </div>
+
+</header>
+
+<section class="grid">
+
+  <div class="card stat">
+    <div class="icon">👥</div>
+    <div class="num">8,621</div>
+    <div class="label">Total Customers</div>
+    <div class="trend">▲ 5.2%</div>
+  </div>
+
+  <div class="card stat">
+    <div class="icon">🟢</div>
+    <div class="num">6,482</div>
+    <div class="label">Active</div>
+    <div class="trend">▲ 4.1%</div>
+  </div>
+
+  <div class="card stat">
+    <div class="icon">🆕</div>
+    <div class="num">428</div>
+    <div class="label">New This Month</div>
+    <div class="trend">▲ 11.3%</div>
+  </div>
+
+  <div class="card stat">
+    <div class="icon">⭐</div>
+    <div class="num">74%</div>
+    <div class="label">Retention Rate</div>
+    <div class="trend">▲ 2.8%</div>
+  </div>
+
+</section>
+
+<section class="card table-card">
+
+  <div class="table-header">
+    <h3>Customer List</h3>
+    <input class="search" placeholder="Search customers...">
+  </div>
+
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>Customer</th>
+        <th>Email</th>
+        <th>Orders</th>
+        <th>Total Spent</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td><b>Maria Adams</b></td>
+        <td>maria@example.com</td>
+        <td>24</td>
+        <td>$12,450</td>
+        <td><span class="status">Active</span></td>
+      </tr>
+
+      <tr>
+        <td><b>James Reed</b></td>
+        <td>james@example.com</td>
+        <td>18</td>
+        <td>$9,820</td>
+        <td><span class="status">Active</span></td>
+      </tr>
+
+      <tr>
+        <td><b>Sarah Carter</b></td>
+        <td>sarah@example.com</td>
+        <td>7</td>
+        <td>$3,240</td>
+        <td><span class="status wait">Pending</span></td>
+      </tr>
+
+      <tr>
+        <td><b>Noah Miller</b></td>
+        <td>noah@example.com</td>
+        <td>12</td>
+        <td>$6,810</td>
+        <td><span class="status">Active</span></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+</main>
+</div>
+
+</body>
+</html>
